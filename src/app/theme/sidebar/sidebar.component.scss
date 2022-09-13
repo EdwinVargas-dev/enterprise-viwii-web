@@ -11,6 +11,9 @@
   height: variables.$toolbar-height-desktop;
   padding: 0 10px;
   overflow: hidden;
+  justify-content: center;
+  flex-direction: column !important;
+  padding-top: 5%;
 
   @include breakpoints.bp-lt(small) {
     & {

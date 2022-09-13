@@ -39,6 +39,18 @@ const routes: Routes = [
         loadChildren: () => import('./admin-stores/admin-stores.module').then(m => m.AdminStoresModule),
       },
       {
+        path: 'admin-sales',
+        loadChildren: () => import('./admin-sales/admin-sales.module').then(m => m.AdminSalesModule),
+      },
+      {
+        path: 'admin-finance',
+        loadChildren: () => import('./admin-finance/admin-finance.module').then(m => m.AdminFinanceModule),
+      },
+      {
+        path: 'admin-delivery',
+        loadChildren: () => import('./admin-delivery/admin-delivery.module').then(m => m.AdminDeliveryModule),
+      },
+      {
         path: 'design',
         loadChildren: () => import('./design/design.module').then(m => m.DesignModule),
       },
@@ -79,6 +91,7 @@ const routes: Routes = [
     children: [
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
+      { path: 'recovery', component: RegisterComponent },
     ],
   },
   { path: '**', redirectTo: 'dashboard' },

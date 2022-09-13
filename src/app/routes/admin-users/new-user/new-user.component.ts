@@ -24,6 +24,10 @@ export class NewUserComponent implements OnInit {
     { id: 'ADMIN-STORES', name: 'Tiendas' },
     { id: 'MY-STORE', name: 'Mi tienda' },
     { id: 'ADMIN-INVENTORY', name: 'Inventario' },
+    { id: 'ADMIN-SALES', name: 'Ventas' },
+    { id: 'ADMIN-DELIVERY', name: 'Domicilios' },
+    { id: 'ADMIN-FINANCE', name: 'Finanzas' },
+    { id: 'MY-PROFILE', name: 'Mi perfil' },
   ];
 
   constructor(private router: Router, private fb: FormBuilder, private usersService: UsersService) {

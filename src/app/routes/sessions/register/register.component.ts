@@ -12,7 +12,7 @@ import { UsersService } from '@shared/services/users.service';
   templateUrl: './register.component.html',
 })
 export class RegisterComponent implements OnInit {
-  componentList: string[] = ['PROFILE', 'ADMIN-STORES', 'ADMIN-USERS', 'MY-STORE', 'ADMIN-INVENTORY', 'ADMIN-SALES'];
+  componentList: string[] = ['MY-PROFILE', 'ADMIN-STORES', 'ADMIN-USERS', 'MY-STORE', 'ADMIN-INVENTORY', 'ADMIN-SALES', 'ADMIN-DELIVERY', 'ADMIN-FINANCE'];
   isSubmitting = false;
 
   confirmValidator = (control: FormControl): { [k: string]: boolean } => {

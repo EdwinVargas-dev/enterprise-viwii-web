@@ -58,37 +58,29 @@ const MESSAGES = [
 export class DashboardService {
   stats = [
     {
-      title: 'Total Sales',
-      amount: '180,200',
+      title: 'Ingresos',
+      amount: '6500000',
       progress: {
-        value: 50,
-      },
-      color: 'bg-indigo-500',
-    },
-    {
-      title: 'Revenue',
-      amount: '70,205',
-      progress: {
-        value: 70,
+        value: 100,
       },
       color: 'bg-blue-500',
     },
     {
-      title: 'Traffic',
-      amount: '1,291,922',
+      title: 'Ganancias',
+      amount: '4000000',
       progress: {
-        value: 80,
+        value: 60,
       },
       color: 'bg-green-500',
     },
     {
-      title: 'New User',
-      amount: '1,922',
+      title: 'Gastos',
+      amount: '2500000',
       progress: {
         value: 40,
       },
-      color: 'bg-teal-500',
-    },
+      color: 'bg-red-400',
+    }
   ];
 
   charts = [
@@ -106,12 +98,19 @@ export class DashboardService {
       },
       series: [
         {
-          name: 'UV',
-          data: [31, 40, 28, 51, 42, 109, 100],
+          name: 'Ingresos',
+          data: [31, 40, 48, 51, 46, 109, 100],
+          color: '#2196F3'
         },
         {
-          name: 'Download',
-          data: [11, 32, 45, 32, 34, 52, 41],
+          name: 'Ganancias',
+          data: [11, 32, 45, 38, 46, 82, 70],
+          color: '#4CAF50'
+        },
+        {
+          name: 'Gastos',
+          data: [20, 32, 30, 20, 34, 45, 30],
+          color: '#EF5350'
         },
       ],
       xaxis: {
@@ -147,7 +146,7 @@ export class DashboardService {
           data: [20, 100, 40, 30, 50, 80, 33],
         },
       ],
-      labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      labels: ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabados'],
       plotOptions: {
         radar: {
           size: 140,
